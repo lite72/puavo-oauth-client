@@ -9,10 +9,11 @@ require 'restclient'
 class Client < Sinatra::Base
 
   # Predefined application identification data 
-  set :redirect_uri, 'http://puavo-auth:9292/callback/'   # We choose, and tell Opinsys our redirect_uri
-  set :login_base_uri, 'http://puavo-auth:3000/oauth/authorize'
-  set :puavo_rest_base, 'http://puavo-auth:3000/'
-  set :authorization_base_uri, 'http://puavo-auth:3000/oauth/token'
+  set :redirect_uri, 'https://my.client.software/callback/'   # We choose, and tell Opinsys our redirect_uri
+  set :login_base_uri, 'https://opinsys.fi/oauth/authorize'
+  set :authorization_base_uri, 'https://opinsys.fi/oauth/token'
+  set :puavo_rest_base, 'https://opinsys.fi/'
+
   set :client_id, 'oauth_client_id/09d25700-95cd-012f-6c73-5254010000e5'
   set :client_secret, '09d24230-95cd-012f-6c72-5254010000e5'
 
