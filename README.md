@@ -10,8 +10,7 @@ Installation instructions
 ```sh
 sudo apt-get install ruby1.8 # or newer
 sudo gem install bundle
-git clone git@github.com:lite72/puavo-oauth-client.git
-
+git clone https://github.com/lite72/puavo-oauth-client.git
 cd puavo-oauth-client
 bundle install # it's possible you need to install some libxxxxx-dev packages first
 vim src/client.rb  # correct the credentials and uris
